@@ -1,0 +1,30 @@
+package ME2024POO;
+
+import java.util.ArrayList;
+public class medico {
+	String crm;
+	ArrayList<disponibilidades> disponibilidades	= new ArrayList<disponibilidades	>();
+	
+	
+	
+	   public medico(String crm, ArrayList<disponibilidades   > disponibilidades) {
+	        this.crm = crm;
+	        this.disponibilidades = disponibilidades;
+	   }
+
+	 void adicionarDisponibilidade(disponibilidades	 novaDisponibilidade) {
+	        if (novaDisponibilidade != null) {
+	            this.disponibilidades.add(novaDisponibilidade);
+	        }	
+}
+	
+	 void alteraDisponibilidade(disponibilidades disponibilidadeParaAlterar) {
+	        for (disponibilidades disp : disponibilidades) {
+	            if (disp.equals(disponibilidadeParaAlterar)) {
+	                disp.ativo = !disp.ativo;
+	                break; 
+	            }
+}	
+
+}
+}
