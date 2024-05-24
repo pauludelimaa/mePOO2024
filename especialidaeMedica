@@ -1,0 +1,26 @@
+package ME2024POO;
+import java.util.Date;
+public class especialidadeMedica {
+	boolean emAtuacao;
+	Date ultimaAlteracao;
+	
+public especialidadeMedica(boolean emAtuacao, Date ultimaAlteracao) {
+		
+		this.emAtuacao = emAtuacao;
+		this.ultimaAlteracao = ultimaAlteracao;
+	}
+
+	void ativaAtuacao() {
+	    emAtuacao = true;
+	    ultimaAlteracao = new Date(); 
+
+}
+
+	void desativaAtuacao() {
+	       emAtuacao = true;
+	       ultimaAlteracao = new Date(); 
+
+}
+
+	
+}
