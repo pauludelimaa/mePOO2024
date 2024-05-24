@@ -1,0 +1,80 @@
+package ME2024POO;
+import java.util.Date;
+public class disponibilidades {
+
+	int idDisponibilidades;
+	char diaSemana;
+	Date horaInicio;
+	Date horaFinal;
+	boolean aceitaEncaixe;
+	boolean ativo;
+	
+	public disponibilidades(int idDisponibilidades, char diaSemana, Date horaInicio, Date horaFinal, boolean aceitaEncaixe, boolean ativo) {
+        this.idDisponibilidades = idDisponibilidades;
+        this.diaSemana = diaSemana;
+        this.horaInicio = horaInicio;
+        this.horaFinal = horaFinal;
+        this.aceitaEncaixe = aceitaEncaixe;
+        this.ativo = ativo;
+	}
+        void ativarDisponibilidade() {
+    	    ativo = true;
+        
+        }
+        
+        void desativarDisponibilidade() {
+        	ativo = false;
+        	
+        }
+        
+     void  ativarEncaixe () {
+     aceitaEncaixe = true;
+     }
+     
+     void desativarEncaixe () {
+    	 aceitaEncaixe = false;
+     }
+        
+        
+        
+    
+	public int getIdDisponibilidades() {
+		return idDisponibilidades;
+	}
+	public void setIdDisponibilidades(int idDisponibilidades) {
+		this.idDisponibilidades = idDisponibilidades;
+	}
+	public char getDiaSemana() {
+		return diaSemana;
+	}
+	public void setDiaSemana(char diaSemana) {
+		this.diaSemana = diaSemana;
+	}
+	public Date getHoraInicio() {
+		return horaInicio;
+	}
+	public void setHoraInicio(Date horaInicio) {
+		this.horaInicio = horaInicio;
+	}
+	public Date getHoraFinal() {
+		return horaFinal;
+	}
+	public void setHoraFinal(Date horaFinal) {
+		this.horaFinal = horaFinal;
+	}
+	public boolean isAceitaEncaixe() {
+		return aceitaEncaixe;
+	}
+	public void setAceitaEncaixe(boolean aceitaEncaixe) {
+		this.aceitaEncaixe = aceitaEncaixe;
+	}
+	public boolean isAtivo() {
+		return ativo;
+	}
+	public void setAtivo(boolean ativo) {
+		this.ativo = ativo;
+	}
+	
+	
+	
+}
