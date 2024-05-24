@@ -1,0 +1,31 @@
+package ME2024POO;
+
+public class especialidade {
+
+
+		int idEspecialidade;
+		String descricao;
+		
+		public especialidade(int idEspecialidade, String descricao) {
+		
+			this.idEspecialidade = idEspecialidade;
+			this.descricao = descricao;
+		}
+		
+		public int getIdEspecialidade() {
+			return idEspecialidade;
+		}
+		public void setIdEspecialidade(int idEspecialidade) {
+			this.idEspecialidade = idEspecialidade;
+		}
+		public String getDescricao() {
+			return descricao;
+		}
+		public void setDescricao(String descricao) {
+			this.descricao = descricao;
+		}
+
+	
+
+
+}
