@@ -1,22 +1,25 @@
 package ME2024POO;
 
 import java.util.ArrayList;
-public class medico {
-	String crm;
-	ArrayList<disponibilidades> disponibilidades	= new ArrayList<disponibilidades	>();
+public class medico extends pessoa {
+    private String crm;
+    private ArrayList<disponibilidade> disponibilidades = new ArrayList<>();
+    private especialidadeMedica especialidade;
 	
 	
-	
-	   public medico(String crm, ArrayList<disponibilidades   > disponibilidades) {
-	        this.crm = crm;
-	        this.disponibilidades = disponibilidades;
-	   }
+    public medico(String nome, String telefone, String email, String crm, especialidadeMedica especialidade) {
+        super(nome, telefone, email);
+        this.crm = crm;
+        this.especialidade = especialidade;
+    }
+	  
+    
+    
+    public void adicionarDisponibilidade(String diaSemana, String horarioInicio, String horarioFim) {
+        disponibilidade novaDisponibilidade = new disponibilidade(diaSemana, horarioInicio, horarioFim);
+        this.disponibilidades.add(novaDisponibilidade);
+    }
 
-	 void adicionarDisponibilidade(disponibilidades	 novaDisponibilidade) {
-	        if (novaDisponibilidade != null) {
-	            this.disponibilidades.add(novaDisponibilidade);
-	        }	
-}
 	
 	 void alteraDisponibilidade(disponibilidades disponibilidadeParaAlterar) {
 	        for (disponibilidades disp : disponibilidades) {
